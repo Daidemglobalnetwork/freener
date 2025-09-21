@@ -1,0 +1,665 @@
+/* =========================
+   GLOBAL STYLES & RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  padding:10px;
+  background: #2e3c50;
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+
+img {
+  width: 200px;
+  height: 200px;
+  display: right;
+}
+
+/* =========================
+   HEADER & NAVIGATION
+========================= */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #040704, #060a0a);
+  color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* =========================
+   NAVIGATION STYLING FIX
+========================= */
+nav {
+  background: #141618;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* spacing between links */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #1111;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* =========================
+   SECTIONS & CONTENT
+========================= */
+section,
+main section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 12px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #d4af37;
+}
+h2 {
+  color: #d4af37;
+}
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  border-left: 4px solid #50c9ce;
+  padding-left: 10px;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+#contact {
+  background-color: #f2e2e2;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 400px;
+  max-height: 400;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+#contact h2,
+#contact h3 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+#contact label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+#contact input,
+#contact textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+#contact button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+#contact button:hover {
+  background-color: #eb25da;
+}
+
+/* =========================
+   WHATSAPP SECTION
+========================= */
+.whatsapp-section {
+  text-align: center;
+  margin-top: 30px;
+}
+.whatsapp-btn {
+  background-color: #25d366;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.whatsapp-btn:hover {
+  background-color: #1ebe5b;
+}
+
+/* =========================
+   PROJECTS SECTION
+========================= */
+.projects {
+  padding: 40px 20px;
+  background-color: #d4af37;
+  text-align: center;
+}
+.projects-section {
+  display: inline-block;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 20px;
+}
+.project-card {
+  display: inline-block;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #d4af37;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 15px;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.project-card h3 {
+  font-size: 20px;
+  margin: 15px 0 5px;
+}
+.project-card p {
+  font-size: 14px;
+  color: #cc31a5;
+  padding: 0 15px;
+}
+.project-card a,
+.view-btn {
+  display: inline-block;
+  margin: 15px auto 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.project-card a:hover,
+.view-btn:hover {
+  background-color: #d4af37;
+}
+
+/* =========================
+   BLOG SECTION
+========================= */
+.blog-section {
+  width: 1000px;
+  background: #273825;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+.blog-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.blog-post {
+  background-color: #ffffff;
+  border-left: 5px solid #ff9800;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.blog-post h3 {
+  margin-top: 0;
+}
+.blog-post a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #ff9800;
+  font-weight: bold;
+}
+.blog-post a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+.newsletter {
+  background-color: #ff9800;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.newsletter h2 {
+  color: #273825;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.newsletter p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.newsletter-form input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.newsletter-form button {
+  padding: 10px;
+  background-color: #222f3b;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.newsletter-form button:hover {
+  background-color: #283541;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+.footer-links a {
+  color: #d4af37;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.footer-social a {
+  color: #d4af37;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.footer-social a:hover {
+  color: #007bff;
+}
+.footer-copy {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #bbbbbb;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+    overflow-x: hidden;
+  }
+
+  header,
+  nav,
+  section,
+  footer {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .container,
+  .content,
+  .skills,
+  .contact-form,
+  .projects {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .project-card,
+  .blog-post {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    text-align: left;
+    font-size: 90%;
+  }
+
+  button,
+  .btn,
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* =========================
+   CUSTOM SECTIONS
+========================= */
+
+/* Online Research */
+.research-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+.research-section h2 {
+  font-size: 26px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.research-section h3 {
+  font-size: 20px;
+  color: #34495e;
+  margin-top: 20px;
+}
+.research-section p {
+  font-size: 16px;
+  color: #555;
+}
+.research-section ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+.research-section ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Virtual Assistant */
+.va-section {
+  padding: 100px;
+  background: #ffffff;
+}
+.va-container {
+  max-width: 1000px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  max-width: 150%;
+  height: auto;
+  display: center;
+}
+
+.va-title {
+  font-size: 32px;
+  color: #d4af37;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.va-intro {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.va-subtitle {
+  font-size: 22px;
+  color: #d4af37;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.va-text {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #111;
+  margin-bottom: 20px;
+}
+.va-list {
+  margin: 0 0 20px 20px;
+  padding: 0;
+}
+.va-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #111;
+}
+
+/* Web Development (Hero + Cards) */
+.wd-hero {
+  text-align: center;
+  padding: 48px 20px;
+  background: radial-gradient 200px 500px at 50% -10%, #111;
+  border-bottom: 1px solid #e5e7eb;
+}
+.wd-hero h1 {
+  margin: 0 0 8px;
+  font-size: 2.25rem;
+  letter-spacing: 0.2px;
+  color: #d4af37;
+}
+.wd-hero p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #d4af37;
+}
+.wd-wrapper {
+  max-width: 980px;
+  margin: 28px auto 40px;
+  padding: 0 16px;
+}
+.wd-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.wd-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(2, 6, 23, 0.12);
+}
+
+/* Transition animations */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.1s ease, transform 0.1s ease;
+}
+
+/* When visible */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* When hidden */
+.fade-out {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+/* General Page Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+}
+
+.payment-page {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.payment-page h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.intro-text {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* ========================= PAYMENT METHODS SECTION ========================= */
+.payment-section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #d4af37;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(206, 212, 208, 0.1);
+  text-align: center;
+}
+
+.payment-section h2 {
+  font-size: 2rem;
+  color: #2e3c50;
+  margin-bottom: 15px;
+}
+
+.payment-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.payment-card h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.payment-card ul {
+  list-style: disc;
+  margin-left: 20px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.payment-card li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Back to Home */
+.back-home {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.back-home a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.back-home a:hover {
+  text-decoration: underline;
+}
+
+.crypto-row {
+  display: flex;           /* Align items horizontally */
+  flex-wrap: wrap;         /* Wrap to next line if needed */
+  gap: 5px;                /* Space between logos */
+  align-items: center;     /* Vertically center logos */
+}
+
+.crypto-logo {
+  width: 50px;             /* Small size */
+  height: 50px;
+}
